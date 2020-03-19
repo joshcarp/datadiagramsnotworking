@@ -1,0 +1,6 @@
+one:
+    !type Account:
+        ResourceID <: two.that
+two:
+    !type that:
+        dat <: string

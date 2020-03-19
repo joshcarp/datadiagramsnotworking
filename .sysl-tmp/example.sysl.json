@@ -1,0 +1,97 @@
+{
+ "apps": {
+  "one": {
+   "name": {
+    "part": [
+     "one"
+    ]
+   },
+   "types": {
+    "Account": {
+     "tuple": {
+      "attrDefs": {
+       "ResourceID": {
+        "typeRef": {
+         "context": {
+          "appname": {
+           "part": [
+            "one"
+           ]
+          },
+          "path": [
+           "Account"
+          ]
+         },
+         "ref": {
+          "path": [
+           "two",
+           "that"
+          ]
+         }
+        },
+        "sourceContext": {
+         "start": {
+          "line": 3
+         }
+        }
+       }
+      }
+     },
+     "sourceContext": {
+      "file": "/example.sysl",
+      "start": {
+       "line": 2,
+       "col": 4
+      }
+     }
+    }
+   },
+   "sourceContext": {
+    "file": "/example.sysl",
+    "start": {
+     "line": 1,
+     "col": 1
+    }
+   }
+  },
+  "two": {
+   "name": {
+    "part": [
+     "two"
+    ]
+   },
+   "types": {
+    "that": {
+     "tuple": {
+      "attrDefs": {
+       "dat": {
+        "primitive": "STRING",
+        "constraint": [
+        ],
+        "sourceContext": {
+         "start": {
+          "line": 6
+         }
+        }
+       }
+      }
+     },
+     "sourceContext": {
+      "file": "/example.sysl",
+      "start": {
+       "line": 5,
+       "col": 4
+      }
+     }
+    }
+   },
+   "sourceContext": {
+    "file": "/example.sysl",
+    "start": {
+     "line": 4,
+     "col": 1
+    }
+   }
+  }
+ }
+}
